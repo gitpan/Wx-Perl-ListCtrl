@@ -42,7 +42,7 @@ and sometimes API-incompatible, implementations.
 
 use strict;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 use Wx qw(:listctrl);
 use base 'Wx::ListView';
@@ -118,7 +118,7 @@ sub GetItemText {
     return $it ? $it->GetText : '';
 }
 
-=head2 SetItemtext
+=head2 SetItemText
 
     $lc->SetItemText( $row, $col, 'Text' );
 
